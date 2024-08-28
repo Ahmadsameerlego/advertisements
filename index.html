@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Selector</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main-background">
+        <img id="uploaded-image" src="" alt="Uploaded Image">
+    </div>
+
+    
+    <div id="backgrounds">
+        <img src="imgs/1.png" alt="Background 1" onclick="selectBackground(0)">
+        <img src="imgs/2.png" alt="Background 2" onclick="selectBackground(1)">
+        <img src="imgs/3.png" alt="Background 3" onclick="selectBackground(2)">
+        <img src="imgs/4.png" alt="Background 4" onclick="selectBackground(3)">
+    </div>
+
+    <input type="file" id="image-uploader" accept="image/*" onchange="uploadImage(event)">
+
+    <button onclick="downloadMainBackground()">Download Background</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
