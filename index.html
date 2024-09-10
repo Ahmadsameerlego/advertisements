@@ -3,28 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Selector</title>
+    <title>Receipt Voucher</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="main-background">
-        <img id="uploaded-image" src="" alt="Uploaded Image">
+    <div class="container">
+        <div class="header">
+            <div class="receipt-info">
+                <p>Receipt #: </p>
+                <p>Date: 12/06/2024</p>
+            </div>
+            <h1>Receipt Voucher</h1>
+            <div class="customer-info">
+                <p>Customer Name: ___________________________</p>
+                <p>Number: ___________________________</p>
+            </div>
+        </div>
+
+        <table class="details-table">
+            <thead>
+                <tr>
+                    <th>Total</th>
+                    <th>LOT</th>
+                    <th>VIN</th>
+                    <th>Details</th>
+                    <th>NO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="amount-section">
+            
+            <p>______ AED Total Amount</p>
+            <p>Discount</p>
+            <p>Total</p>
+            <p>Paid Amount</p>
+            <p>Remaining Amount</p>
+        </div>
+
+        <div class="signature-section">
+            <p>Recipient Signature:</p>
+            <div class="signature-line"></div>
+        </div>
+
+        <div class="footer">
+            <div class="contact-info">
+                <p>+971 52 657 7781</p>
+                <p>noor.alwahda.auto@gmail.com</p>
+            </div>
+            <div class="address-info">
+                <p>Industrial Area 12, Sharjah Industrial Area</p>
+            </div>
+        </div>
     </div>
-
-    
-    <div id="backgrounds">
-        <img src="imgs/1.png" alt="Background 1" onclick="selectBackground(0)">
-        <img src="imgs/2.png" alt="Background 2" onclick="selectBackground(1)">
-        <img src="imgs/3.png" alt="Background 3" onclick="selectBackground(2)">
-        <img src="imgs/4.png" alt="Background 4" onclick="selectBackground(3)">
-    </div>
-
-    <input type="file" id="image-uploader" accept="image/*" onchange="uploadImage(event)">
-
-    <button onclick="downloadMainBackground()">Download Background</button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
-    <script src="main.js"></script>
-    
 </body>
 </html>
